@@ -16,4 +16,16 @@ function App() {
       })
       .catch(error => console.error('Error al obtener tareas:', error));
   }, []);
+  
+  return (
+    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+      <h1>Tareas Completadas</h1>
+      <ul>
+        {tareas.map(tarea => (
+          <li key={tarea.id}>{tarea.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
+export default App;
