@@ -73,5 +73,7 @@ const calcular = () => {
       )}
     </div>
   );
-
 }
+
+
+export default App;
