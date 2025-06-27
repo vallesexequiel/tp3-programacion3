@@ -21,8 +21,22 @@ function App() {
 
     const imcCalculado = p / (a * a);
     setImc(imcCalculado.toFixed(2)
-  
-  )};
+  );
+
+      if (imcCalculado < 18.5) {
+      setMensaje('Nivel bajo');
+      setColor('goldenrod');
+    } else if (imcCalculado < 25) {
+      setMensaje('Nivel normal');
+      setColor('green');
+    } else if (imcCalculado < 30) {
+      setMensaje('Nivel de sobrepeso');
+      setColor('orange');
+    } else {
+      setMensaje('Nivel de obesidad');
+      setColor('red');
+    }
+  };
 
 
 
