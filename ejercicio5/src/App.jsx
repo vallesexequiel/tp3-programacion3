@@ -23,5 +23,6 @@ const calcular = () => {
 
     setResultado(res);
   };
+  const esDivision = operacion === "division"
 
 }
