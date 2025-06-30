@@ -26,7 +26,7 @@ const calcular = () => {
 
     setResultado(res);
   };
-  const esDivision = operacion === "division"
+  const deshabilitarDivision = operacion === "division" && parseFloat(num2) === 0;
 
     return (
     <div style={{ padding: "20px", fontFamily: "Arial" }}>
@@ -57,7 +57,7 @@ const calcular = () => {
 
       <button
         onClick={calcular}
-        disabled={esDivision}
+        disabled={deshabilitarDivision}
         style={{ marginTop: "10px" }}
       >
         Calcular
