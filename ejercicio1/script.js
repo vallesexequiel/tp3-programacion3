@@ -30,6 +30,9 @@ calcularBtn.addEventListener("click", () => {
 } else if (operacion.value === "multiplicacion") {
   res = n1 * n2;
 }
+ else if (operacion.value === "division"){
+  res = n1 / n2;
+ }
 
     resultado.textContent = "Resultado: " + res;
 });
