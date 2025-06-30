@@ -17,7 +17,10 @@ const calcular = () => {
       res = a - b;
     } else if (operacion === "multiplicacion") {
       res = a * b;
-    } else {
+    } else if (operacion === "division"){
+      res = b !== 0 ? a / b : "error: division por cero";
+    }
+    else {
       res = "Operación inválida";
     }
 
