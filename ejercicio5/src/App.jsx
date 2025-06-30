@@ -63,12 +63,6 @@ const calcular = () => {
         Calcular
       </button>
 
-      {esDivision && (
-        <p style={{ color: "red" }}>
-          ⚠️ La operación de división está deshabilitada.
-        </p>
-      )}
-
       {resultado !== null && (
         <p style={{ marginTop: "15px" }}>
           Resultado: <strong>{resultado}</strong>
