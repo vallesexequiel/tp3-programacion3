@@ -15,6 +15,9 @@ function verificarDivisionPorCero() {
   }
 }
 
+operacion.addEventListener("change", verificarDivisionPorCero);
+num2.addEventListener("input", verificarDivisionPorCero);
+
 calcularBtn.addEventListener("click", () => {
     const n1 = parseFloat(num1.value);
     const n2 = parseFloat(num2.value);
